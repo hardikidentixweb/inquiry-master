@@ -1,0 +1,32 @@
+{
+  "name": "invoice-master-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Inquiry Master application",
+  "main": "server.js",
+  "scripts": {
+    "local": "export NODE_ENV=local || set NODE_ENV=local&& nodemon server.js --trace-warnings",
+    "dev": "NODE_ENV=dev pm2 start server.js --name bddev -i max",
+    "live": "NODE_ENV=live pm2 start server.js --name bdlive -i max"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "xlsx": "^0.18.5",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "invoice",
+    "client",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
